@@ -1,6 +1,9 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
+LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|aarch64|i386|amd64"
+
+
 ENV LANG C.UTF-8
 
 # Copy data for add-on
@@ -10,5 +13,4 @@ COPY tunslip6-i386 /tunslip6
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
-CMD [ "/tunslip6  -s /dev/ttyUSB1 fd00::1/64" ]
 

@@ -1,12 +1,17 @@
 {
-  "name": "Hello world",
-  "version": "1",
-  "slug": "hello_world",
-  "description": "My first real add-on!",
+  "name": "Zone",
+  "version": "0.1",
+  "slug": "zone",
+  "description": "Connecting the zone border router to the mqtt broker",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "before",
   "boot": "auto",
-  "options": {},
-  "schema": {}
+  "auto_uart": true,
+  "options": {
+    "serialport": "/dev/ttyUSB0"
+  },
+  "schema": {
+    "serialport": "str"
+  },
 }
 
