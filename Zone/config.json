@@ -1,6 +1,6 @@
 {
   "name": "Zone hub",
-  "version": "0.32",
+  "version": "0.33",
   "slug": "zone",
   "description": "Connects the zone border router to the mqtt broker",
   "arch": ["armhf", "amd64"],
