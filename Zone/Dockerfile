@@ -1,4 +1,4 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=hassioaddons/addon-debian-base
 FROM $BUILD_FROM
 
 LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|amd64"
@@ -13,7 +13,7 @@ COPY run.sh /
 COPY tunslip6-${BUILD_ARCH} /tunslip6
 
 RUN \
-    chmod a+x /run.sh
+    chmod a+x /run.sh \
     apk add --no-cache --virtual gcc g++
 
 CMD [ "/run.sh" ]
