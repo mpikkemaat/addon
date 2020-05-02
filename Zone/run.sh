@@ -11,5 +11,7 @@ ls
 echo "serial port is set to"
 echo $SERIALPORT
 
+head /tunslip6
+
 /tunslip6  -s $SERIALPORT fd00::1/64
 
