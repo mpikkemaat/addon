@@ -1,14 +1,15 @@
 {
-  "name": "Zone",
-  "version": "0.1",
+  "name": "Zone hub",
+  "version": "0.2",
   "slug": "zone",
   "description": "Connects the zone border router to the mqtt broker",
   "arch": ["armhf", "amd64"],
+  "executable": "tunslip6-{arch}",
   "startup": "before",
   "boot": "auto",
   "auto_uart": true,
   "options": {
-    "serialport": "/dev/ttyUSB0"
+    "serialport": "/dev/ttyAMA0"
   },
   "schema": {
     "serialport": "str"
