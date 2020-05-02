@@ -12,6 +12,6 @@
   },
   "schema": {
     "serialport": "str"
-  },
+  }
 }
 
