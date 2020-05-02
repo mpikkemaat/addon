@@ -9,7 +9,7 @@
   "boot": "auto",
   "auto_uart": true,
   "options": {
-    "serialport": "/dev/ttyAMA0"
+    "serialport": "/dev/ttyAMA0",
     "system_packages": [
       "gcc",
     ],
