@@ -6,7 +6,10 @@ SERIALPORT="$(jq --raw-output '.serialport' $CONFIG_PATH)"
 
 echo "Zone addon starting"
 
-ls
+ls 
+
+echo "serial port is set to"
+echo $SERIALPORT
 
 /tunslip6  -s $SERIALPORT fd00::1/64
 
