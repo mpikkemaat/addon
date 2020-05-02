@@ -13,7 +13,7 @@ COPY run.sh /
 COPY tunslip6-${BUILD_ARCH} /tunslip6
 
 RUN \
-    chmod a+x /run.sh \
+    chmod a+x /run.sh && \
     apk add --no-cache --virtual gcc g++
 
 CMD [ "/run.sh" ]
