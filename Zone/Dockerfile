@@ -8,10 +8,9 @@ ENV LANG C.UTF-8
 ARG BUILD_ARCH
 
 # Copy data for add-on
-COPY run.sh
+COPY run.sh /
 COPY tunslip6-${BUILD_ARCH} /tunslip6
 
-RUN apk add libc6-dev
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
