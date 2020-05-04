@@ -1,4 +1,4 @@
-ARG BUILD_FROM=bitnami/minideb:jessie #hassio-addons/addon-base
+ARG BUILD_FROM=bitnami/minideb:jessie
 FROM $BUILD_FROM
 
 LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|amd64"
