@@ -14,5 +14,5 @@ COPY tunslip6-${BUILD_ARCH} /tunslip6
 RUN chmod a+x /run.sh
 RUN chmod a+x /tunslip6
 
-CMD [ "/run.sh" ]
+CMD /run.sh
 
