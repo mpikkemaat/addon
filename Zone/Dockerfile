@@ -9,7 +9,7 @@ ARG BUILD_ARCH
 
 # Copy data for add-on
 COPY run.sh /
-COPY tunslip6-${BUILD_ARCH} /tunslip6
+COPY tunslip6-amd64 /tunslip6
 
 RUN chmod a+x /run.sh
 RUN chmod a+x /tunslip6
