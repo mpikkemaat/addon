@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|amd64"
+LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armv7|amd64"
 
 ENV LANG C.UTF-8
 

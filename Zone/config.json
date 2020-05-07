@@ -1,16 +1,22 @@
 {
   "name": "Zone hub",
-  "version": "0.52",
+  "version": "0.55",
   "slug": "zone",
   "description": "Connects the zone border router to the mqtt broker",
-  "arch": ["armhf", "amd64"],
+  "arch": ["armv7", "amd64"],
   "executable": "tunslip6-{arch}",
   "startup": "before",
   "boot": "auto",
+  "devices": ["/dev/net/tun:/dev/net/tun:rwm"],
+  "ports": {
+    "1883/tcp": 1883
+  },
+  "ports_description": {
+    "1883/tcp": "Mosquitto's (or other broker's) MQTT port"
+  },
   "auto_uart": true,
   "options": {
     "serialport": "/dev/ttyAMA0",
-    "system_packages": [ "gcc" ]
   },
   "schema": {
     "serialport": "str"
