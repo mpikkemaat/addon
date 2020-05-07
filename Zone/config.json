@@ -1,6 +1,6 @@
 {
 	"name": "Zone hub",
-	"version": "0.55",
+	"version": "0.56",
 	"slug": "zone",
 	"description": "Connects the zone border router to the mqtt broker",
 	"arch": ["armv7", "amd64"],
@@ -8,10 +8,8 @@
 	"startup": "system",
 	"boot": "auto",
 	"auto_uart": true,
+	"host_network": true,
 	"devices": ["/dev/net/tun:/dev/net/tun:rwm"],
-	"ports": {
-		"1883/tcp": 1883
-	},
 	"options": {
 		"serialport": "/dev/ttyAMA0"
 	},
