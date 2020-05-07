@@ -5,15 +5,12 @@
 	"description": "Connects the zone border router to the mqtt broker",
 	"arch": ["armv7", "amd64"],
 	"executable": "tunslip6-{arch}",
-	"startup": "before",
+	"startup": "system",
 	"boot": "auto",
 	"auto_uart": true,
 	"devices": ["/dev/net/tun:/dev/net/tun:rwm"],
 	"ports": {
 		"1883/tcp": 1883
-	},
-	"ports_description": {
-		"1883/tcp": "Mosquitto's (or other broker's) MQTT port"
 	},
 	"options": {
 		"serialport": "/dev/ttyAMA0"
