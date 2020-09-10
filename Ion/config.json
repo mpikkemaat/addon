@@ -1,8 +1,8 @@
 {
-	"name": "Zone hub",
-	"version": "0.57",
-	"slug": "zone",
-	"description": "Connects the zone border router to the mqtt broker",
+	"name": "Ion hub",
+	"version": "0.58",
+	"slug": "ion",
+	"description": "Connects the ion border router to the mqtt broker",
 	"arch": ["armv7", "amd64"],
 	"executable": "tunslip6-{arch}",
 	"startup": "system",
