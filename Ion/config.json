@@ -1,6 +1,6 @@
 {
 	"name": "Ion hub",
-	"version": "0.66",
+	"version": "0.67",
 	"slug": "ion",
 	"description": "Connects the ion border router to the mqtt broker",
 	"arch": ["armv7", "amd64"],
