@@ -5,11 +5,11 @@ SERIALPORT="$(jq --raw-output '.serialport' $CONFIG_PATH)"
 
 echo "serial port is set to $SERIALPORT"
 
-echo "Host #1"
+#dont remove the following lines, they make tunslip accept the hostname
+#do these lines trigger the actual ip lookup?
+echo "Looking up hostname:"
 host $(hostname)
-
-echo "Host #2"
 hostname -i
 
-/tunslip6 -s $SERIALPORT -v4 fd00::1/64
+/tunslip6 -s $SERIALPORT fd00::1/64
 
