@@ -1,8 +1,9 @@
 {
 	"name": "Ion hub",
-	"version": "0.69",
+	"version": "0.70",
 	"slug": "ion",
 	"description": "Connects the ion border router to the mqtt broker",
+    "url": "https://github.com/mpikkemaat/addon/Ion",
 	"arch": ["armv7", "amd64"],
 	"executable": "tunslip6-{arch}",
 	"startup": "system",
