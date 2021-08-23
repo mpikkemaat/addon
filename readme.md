@@ -2,7 +2,11 @@
 
 Install the Ion addon and enter the right serial port in the configuration settings.
 
-Install the Mosquitto addon and configure username z with password z
+Install the Mosquitto addon and configure username ion with password ion:
+logins: [
+{"username": "ion", "password": "ion"}
+]
+
 
 When encountering problems, for the RPi3, setup the following:
 in config.txt: 
