@@ -1,16 +1,16 @@
 {
 	"name": "Ion hub",
-	"version": "0.70",
+	"version": "0.71",
 	"slug": "ion",
 	"description": "Connects the ion border router to the mqtt broker",
-    "url": "https://github.com/mpikkemaat/addon/Ion",
+	"url": "https://github.com/mpikkemaat/addon/Ion",
 	"arch": ["armv7", "amd64"],
 	"executable": "tunslip6-{arch}",
 	"startup": "system",
 	"boot": "auto",
-	"auto_uart": true,
+	"uart": true,
 	"host_network": true,
-    "privileged": ["NET_ADMIN", "SYS_ADMIN"],
+	"privileged": ["NET_ADMIN", "SYS_ADMIN"],
 	"devices": ["/dev/net/tun:/dev/net/tun:rwm"],
 	"options": {
 		"serialport": "/dev/ttyAMA0"
