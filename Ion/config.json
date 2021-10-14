@@ -13,7 +13,7 @@
 	"privileged": ["NET_ADMIN", "SYS_ADMIN"],
 	"devices": ["/dev/net/tun"],
 	"options": {
-		"serialport": "/dev/ttyAMA0"
+		"serialport": "/dev/ttyS0"
 	},
 	"schema": {
 		"serialport": "str"
