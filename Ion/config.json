@@ -3,7 +3,7 @@
 	"version": "0.71",
 	"slug": "ion",
 	"description": "Connects the ion border router to the mqtt broker",
-	"url": "https://github.com/mpikkemaat/addon/Ion",
+	"url": "https://github.com/mpikkemaat/addon/tree/master/Ion",
 	"arch": ["armv7", "amd64"],
 	"executable": "tunslip6-{arch}",
 	"startup": "system",
