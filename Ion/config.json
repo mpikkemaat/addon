@@ -1,6 +1,6 @@
 {
 	"name": "Ion hub",
-	"version": "0.73",
+	"version": "0.74",
 	"slug": "ion",
 	"description": "Connects the ion border router to the mqtt broker",
 	"url": "https://github.com/mpikkemaat/addon/tree/master/Ion",
