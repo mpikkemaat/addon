@@ -11,6 +11,4 @@ echo "Looking up hostname:"
 host $(hostname)
 hostname -i
 
-/tunslip6 -v -s $SERIALPORT fd00::1/64
-#try to prevent some packets forcing the process to exit
-echo 0 > /proc/sys/net/ipv6/auto_flowlabels
+/tunslip6 -v1 -s $SERIALPORT fd00::1/64
