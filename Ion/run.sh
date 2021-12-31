@@ -11,4 +11,4 @@ echo "Looking up hostname:"
 host $(hostname)
 hostname -i
 
-/tunslip6 -v4 -s $SERIALPORT fd00::1/64
+/tunslip6 -v4 -s $SERIALPORT -B 115200 fd00::1/64
